@@ -5,23 +5,20 @@ class StringBuilder {
     this.#value = initialValue; 
   }
 
-  getValue(){
+  getValue( ){
     return this.#value;
   }
 
   padEnd(str){
     this.#value += str;
-    return this; 
   }
 
   padStart(str){
     this.#value = str + this.#value;
-    return this;
   }
 
   padBoth(str){
     this.#value = str + this.#value + str;
-    return this;
   }
 }
 

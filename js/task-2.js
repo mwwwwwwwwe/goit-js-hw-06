@@ -2,11 +2,11 @@ class Storage {
   #items = [ ];
 
   constructor(arr){
-    this.#items.push(...arr);
+    console.log(this.#items.push(...arr));
   }
 
   getItems(){
-    return [...this.#items]; 
+    return this.#items;
   }
 
   addItem(newItem){
@@ -14,8 +14,7 @@ class Storage {
   }
 
   removeItem(itemToRemove){
-    if(this.#items.indexOf(itemToRemove) != -1)
-        {
+    if(this.#items.indexOf(itemToRemove) != -1){
       this.#items.splice(this.#items.indexOf(itemToRemove),1);
     }
   }
